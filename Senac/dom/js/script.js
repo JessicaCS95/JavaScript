@@ -44,6 +44,9 @@ const navLinks = document.querySelector("nav ul");
 const li = document.createElement("li");
 navLinks.appendChild(li);
 
+// Criando um nó de texto para a nova lista
+li.textContent = "Blog";
+
 //replaceChild
 const h2 = document.createElement("h1");
 h2.textContent = "Novo Título";
@@ -56,6 +59,11 @@ console.log(meuTexto);
 const h3 = document.createElement("h3");
 h3.appendChild(meuTexto);
 console.log(h3);
+
+
+// Inserindo o h3 abaixo do H1 
+const h1NovoTitulo = document.querySelector("h1");
+h1NovoTitulo.insertAdjacentElement("afterend", h3); 
 
 //setAttribute e getAttribute
 const primeiroLink = navLinks.querySelector("a");
